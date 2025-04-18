@@ -24,6 +24,9 @@
 
   <body>
     <main class="container">
+      <%= tag.div tag.mark(notice), class: "flash notice" if notice %>
+      <%= tag.div tag.mark(alert), class: "flash alert" if alert %>
+
       <%= yield %>
     </main>
   </body>

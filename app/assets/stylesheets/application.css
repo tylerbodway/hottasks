@@ -8,3 +8,15 @@
  *
  * Consider organizing styles into separate files for maintainability.
  */
+
+.flash {
+  margin: 1rem 0;
+}
+
+.flash.notice mark {
+  background-color: var(--pico-mark-background-color);
+}
+
+.flash.alert mark {
+  background-color: var(--pico-del-color);
+}
