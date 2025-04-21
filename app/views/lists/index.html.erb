@@ -1,1 +1,10 @@
-<h1>Lists</h1>
+<header class="grid">
+  <h1>Lists</h1>
+  <%= link_to "Add", new_list_path, role: "button", class: "outline" %>
+</header>
+
+<% if @lists.any? %>
+  <%= render @lists %>
+<% else %>
+  <p>No lists yet.</p>
+<% end %>

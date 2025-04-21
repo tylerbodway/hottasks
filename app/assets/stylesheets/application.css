@@ -20,3 +20,7 @@
 .flash.alert mark {
   background-color: var(--pico-del-color);
 }
+
+header.grid {
+  grid-template-columns: 1fr auto;
+}
