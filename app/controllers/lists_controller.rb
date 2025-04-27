@@ -1,5 +1,5 @@
 class ListsController < ApplicationController
-  before_action :set_list, only: %w[show edit update]
+  before_action :set_list, only: %w[show edit update destroy]
 
   def index
     @lists = Current.user.lists
@@ -33,6 +33,11 @@ class ListsController < ApplicationController
     else
       render :edit, status: :unprocessable_entity
     end
+  end
+
+  def destroy
+    @list.destroy!
+    redirect_to lists_path, status: :see_other, notice: "List removed."
   end
 
   private
