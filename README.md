@@ -1,24 +1,35 @@
-# README
+# Hottasks
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This app is my playground to learn the latest [Rails](https://rubyonrails.org) stack, specifically [Hotwire](https://hotwired.dev/). It is a simple todo app.
 
-Things you may want to cover:
+I'm logging the tidbits I'm learning over in the [LEARNLOG](/LEARNLOG.md)
 
-* Ruby version
+## Installation
 
-* System dependencies
+1. Install Git and Ruby (see [`.ruby-version`](.ruby-version) for supported version)
 
-* Configuration
+2. Clone the repository
 
-* Database creation
+```bash
+  git clone git@github.com:tylerbodway/hottasks.git && cd hottasks
+```
 
-* Database initialization
+3. Run the setup script
 
-* How to run the test suite
+```bash
+  bin/setup
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+## Development
 
-* Deployment instructions
+Run the local server
 
-* ...
+```bash
+bin/rails server
+```
+
+Run the test suite
+
+```bash
+bin/rails test
+```
